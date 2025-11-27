@@ -45,27 +45,6 @@
     "max-length": 50,
     "separate-outputs": true,
   },
-  "custom/omarchy": {
-    "format": "",
-    "on-click": "omarchy-menu",
-    "on-click-right": "xdg-terminal-exec",
-    "tooltip": false,
-  },
-  "custom/weather": {
-    "format": "{}",
-    "exec": "~/.config/waybar/scripts/weather.sh",
-    "return-type": "json",
-    "interval": 1800,
-    "tooltip": true,
-  },
-  "custom/pacman-updates": {
-    "format": "{}",
-    "exec": "~/.config/waybar/scripts/pacman-updates.sh",
-    "return-type": "json",
-    "interval": 3600,
-    "on-click": "omarchy-launch-floating-terminal-with-presentation 'sudo pacman -Syu' ",
-    "signal": 9,
-  },
   "clock": {
     "format": "{:%H:%M }",
     "format-alt": "{:L%d %B %Y}",
