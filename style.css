@@ -10,9 +10,9 @@
 }
 
 /* Apply border-radius only to module containers */
-.modules-left > *,
-.modules-right > *,
-.modules-center > * {
+.modules-left>*,
+.modules-right>*,
+.modules-center>* {
   border-radius: 15px;
 }
 
@@ -36,24 +36,25 @@
   margin: 4px 3px;
 
   background-color: transparent;
-  color: @foreground;
+  color: transparent;
   border-radius: 6px;
 
-  /* ANIMATION */
   transition: all 0.19s ease;
 }
 
 /* The Active "Stretched" Pill */
 #workspaces button.active {
   padding-left: 5.5px;
-  padding-right: 8px;
-  background-color: alpha(@foreground, 0.1); /* Gold Background */
+  padding-right: 7.8px;
+  background-color: alpha(@foreground, 0.9);
   min-width: 25px;
 }
 
 #workspaces button.active * {
   font-size: 16px;
+  color: black;
 }
+
 #workspaces button * {
   font-size: 15px;
 }
@@ -62,12 +63,16 @@
   opacity: 0.5;
 }
 
+#workspaces button:hover {
+  background: none;
+}
+
 /* -----------------------------------------------------
  * WINDOW & BAR
  * ----------------------------------------------------- */
 
 window#waybar {
-  background-color: rgba(1, 1, 1, 0.2);
+  background-color: rgba(10, 10, 10, 0.01);
   border-radius: 8px;
   border: 1.5px solid rgba(200, 200, 200, 0.1);
 }
@@ -79,7 +84,7 @@ window#waybar {
 }
 
 #pulseaudio {
-  color: white;
+  color: @foreground;
   margin-right: 17px;
 }
 
@@ -94,9 +99,6 @@ window#waybar {
   margin-left: 5px;
 }
 
-.modules-left #window * {
-  color: #ffdddd;
-}
 
 #tray {
   margin-left: 8px;
@@ -111,10 +113,10 @@ tooltip,
 tooltip {
   padding: 10px;
   border: 1.5px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 12px;
-  font-weight: 500;
-  background-color: rgba(15, 15, 15, 1);
+  font-weight: 600;
+  background-color: rgba(15, 15, 15, 0.9);
 }
 
 #clock {
@@ -169,13 +171,6 @@ tooltip {
   animation-iteration-count: infinite;
 }
 
-/* Charging Animation */
-#battery.charging {
-  animation-name: charging-slide;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
 
 #battery.plugged {
   color: #a6e3a1;
@@ -186,7 +181,7 @@ tooltip {
 }
 
 #network {
-  color: white;
+  color: @foreground;
   margin-right: 15px;
   margin-left: 1px;
 }
