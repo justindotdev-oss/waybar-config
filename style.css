@@ -159,3 +159,8 @@ window#waybar {
   margin-right: 15px;
   margin-left: 1px;
 }
+
+#custom-cava {
+  color: @foreground;
+  padding-left: 10px;
+}
