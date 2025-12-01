@@ -59,10 +59,12 @@
   opacity: 0.5;
 }
 
+#workspaces button.active:hover {
+  background: @foreground;
 
-#workspaces button:hover * {
-  color: black;
 }
+
+#workspaces button:hover {}
 
 
 
