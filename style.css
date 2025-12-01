@@ -161,6 +161,6 @@ window#waybar {
 }
 
 #custom-cava {
-  color: @foreground;
+  color: lightgreen;
   padding-left: 10px;
 }
