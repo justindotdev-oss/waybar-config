@@ -4,7 +4,7 @@
     color: @foreground;
     border: none;
     min-height: 0;
-    font-family: "CaskaydiaMono Nerd Font";
+    font-family: 'CaskaydiaMono Nerd Font';
     font-weight: 600;
     font-size: 13px;
 }
