@@ -57,7 +57,7 @@ bars = 6
 method = raw
 raw_target = /dev/stdout
 data_format = ascii
-ascii_max_range = 7
+ascii_max_range = 8
 " >$config_file
 
 # Start waybar monitoring as independent process
