@@ -4,14 +4,14 @@
   color: @foreground;
   border: none;
   min-height: 0;
-  font-family: 'CaskaydiaMono Nerd Font';
+  font-family: "CaskaydiaMono Nerd Font";
   font-weight: 600;
   font-size: 13px;
 }
 
-.modules-left>*,
-.modules-right>*,
-.modules-center>* {
+.modules-left > *,
+.modules-right > *,
+.modules-center > * {
   border-radius: 15px;
 }
 
@@ -68,7 +68,7 @@
 window#waybar {
   background-color: alpha(@background, 0.01);
   border-radius: 8px;
-  border: 1.5px solid alpha(@foreground, 0.08);
+  border: 1.5px solid alpha(@foreground, 0.15);
 }
 
 #custom-update {
