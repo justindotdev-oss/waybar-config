@@ -5,7 +5,7 @@
   "margin-bottom": 0,
   "position": "top",
   "spacing": 0,
-  "width": 500,
+  "width": 800,
   "height": 28,
   "modules-center": ["hyprland/workspaces"],
   "modules-left": ["clock", "custom/cava", "custom/screenrecording-indicator"],
